@@ -1,16 +1,19 @@
 import { useState } from "react"
 
-function IndexPopup() {
+function IndexSidePanel() {
   const [data, setData] = useState("")
 
   return (
     <div
       style={{
+        display: "flex",
+        flexDirection: "column",
         padding: 16
       }}>
       <h2>
-        Welcome to your{" "}
+        Welcome to your
         <a href="https://www.plasmo.com" target="_blank">
+          {" "}
           Plasmo
         </a>{" "}
         Extension!
@@ -23,4 +26,4 @@ function IndexPopup() {
   )
 }
 
-export default IndexPopup
+export default IndexSidePanel
